@@ -8,11 +8,12 @@
 **in the root of the project type:**
 ####
 - **Windows: (testing with git bash)**
+> python3 -m venv .venv
 > source .venv/Scripts/activate
 
 - **macos/Linux:**
-> in this project: python3 -m venv .venv
-> apt install python3.12-venv
+> sudo apt install python3.12-venv **(Ubuntu)**
+> python3 -m venv .venv
 
 > source .venv/bin/activate
 

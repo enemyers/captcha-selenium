@@ -1,2 +1,6 @@
-/modules/__pycache__*
+.venv
+
+/modules/__pycache__
+/test/__pycache__
+
 captcha.png
