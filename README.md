@@ -10,7 +10,10 @@
 - **Windows: (testing with git bash)**
 > source .venv/Scripts/activate
 
-- **macos/Linux:** 
+- **macos/Linux:**
+> in this project: python3 -m venv .venv
+> apt install python3.12-venv
+
 > source .venv/bin/activate
 
 ### 2. Install pip dependencies:
