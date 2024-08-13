@@ -1,11 +1,11 @@
-# Python version: 3.12.4
+# Python version: 3.12.+
 
 ---
 
 ## > Prepare environment:
 
 ### 1. Activate environment:
-**in the root of the project type:**
+**In the root of the project type:**
 ####
 - **Windows: (testing with git bash)**
 > python3 -m venv .venv
@@ -30,7 +30,7 @@
 
 **If you need another package:**
 
-install with pip and delete requirements.txt
+**Install with pip and delete requirements.txt**
 - rebuild requirements.txt with:
 ####
 > pip freeze > requirements.txt
@@ -39,4 +39,4 @@ install with pip and delete requirements.txt
 > python main.py
 
 **Link to test with postamn or another form:**
-> **GET** http://127.0.0.1:5300/placa/AUH628
+> **GET:** http://127.0.0.1:5300/placa/AUH628
