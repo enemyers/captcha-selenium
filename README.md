@@ -12,7 +12,8 @@
 > source .venv/Scripts/activate
 
 - **macos/Linux:**
-> sudo apt install python3.12-venv **(Ubuntu)**
+> sudo apt install python3.12-venv xvfb **(Ubuntu)**
+
 > python3 -m venv .venv
 
 > source .venv/bin/activate
@@ -25,6 +26,7 @@
  - Selenium 4.23.1 
  - Flask    3.0.3
  - easyocr  1.7.1
+ - PyVirtualDisplay 3.0
 
 ---
 
