@@ -15,6 +15,10 @@
 
 > winget install "FFmpeg (Essentials Build)"
 
+**Install DLL on /windows/systwm32/**
+
+https://www.dllme.com/dll/files/libomp140_x86_64/00637fe34a6043031c9ae4c6cf0a891d
+
 ---
 
 - **Linux:**
