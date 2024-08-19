@@ -11,11 +11,10 @@
 > python3 -m venv .venv
 > source .venv/Scripts/activate
 
-- **macos/Linux:**
-> sudo apt install python3.12-venv xvfb **(Ubuntu)**
+- **Linux:**
+> sudo apt install python3.12-venv xvfb ffmpeg **(Ubuntu)**
 
 > python3 -m venv .venv
-
 > source .venv/bin/activate
 
 ### 2. Install pip dependencies:
@@ -27,6 +26,7 @@
  - Flask    3.0.3
  - easyocr  1.7.1
  - PyVirtualDisplay 3.0
+ - ByPasser (recaptchav2)
 
 ---
 
@@ -41,4 +41,6 @@
 > python main.py
 
 **Link to test with postamn or another form:**
-> **GET:** http://127.0.0.1:5300/placa/AUH628
+> **GET:** http://127.0.0.1:5300/placa/{patente} EXAMPLE: AUH628
+
+> **GET:** http://127.0.0.1:5300/papeleta/{patente} EXAMPLE: AUH628

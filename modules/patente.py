@@ -82,5 +82,4 @@ def get_placa(placa):
     # Stop silent browser
     display.stop()
 
-    # return jsonify({"message": "Placa processed successfully!"})
     return jsonify({"data": data})
