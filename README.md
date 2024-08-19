@@ -1,21 +1,39 @@
 # Python version: 3.12.+
 
----
-
-## > Prepare environment:
+## Prepare environment:
 
 ### 1. Activate environment:
 **In the root of the project type:**
 ####
 - **Windows: (testing with git bash)**
 
-
-> python3 -m venv .venv
+> python -m venv .venv
 
 > source .venv/Scripts/activate
 
+ **Install via terminal:** 
+
+> winget install "FFmpeg (Essentials Build)"
+
+---
+
 - **Linux:**
-> sudo apt install python3.12-venv xvfb ffmpeg **(Ubuntu)**
+
+ **Install via terminal:** 
+
+> sudo apt install python3.12-venv xvfb ffmpeg **(Ubuntu 22.04+)**
+
+> python3 -m venv .venv
+
+> source .venv/bin/activate
+
+---
+
+- **macOS (homebrew)**
+
+ **Install via terminal:** 
+
+> brew install ffmpeg
 
 > python3 -m venv .venv
 
@@ -23,7 +41,11 @@
 
 ### 2. Install pip dependencies:
 ####
-> python3 -m pip freeze > requirements.txt
+> pip install -r requirements.txt
+
+**if error with modules reinstall these packages:**
+
+> pip install -r selenium Flask easyocr PocketSphinx pypasser
 
 ### pip packages:
  - Selenium 4.23.1 
@@ -34,18 +56,26 @@
 
 ---
 
-**If you need another package:**
-
-**Install with pip and delete requirements.txt**
-- rebuild requirements.txt with:
-####
-> pip freeze > requirements.txt
-
-- To run:
+### To run project:
 > python main.py
 
-**Link to test endpoints:**
 
-> **GET:** http://127.0.0.1:5300/placa/{patente} EXAMPLE: AUH628
+**NOTE:**
 
-> **GET:** http://127.0.0.1:5300/papeleta/{patente} EXAMPLE: AUH628
+**ON WINDOWS AND MACOS NOT WORK BACKGROUND DISPLAY, SO YOU NEED COMMENT THIS:**
+
+> #from pyvirtualdisplay import Display --> (/modules/papeleta.py) and (/modules/papeleta.py)
+
+> #display = Display(visible=0, size=(800, 600)) --> (/modules/papeleta.py) and (/modules/papeleta.py)
+
+> #display.start() (/modules/papeleta.py) and --> (/modules/papeleta.py)
+
+> #display.stop() (/modules/papeleta.py) and --> (/modules/papeleta.py)
+
+---
+
+**Links to test the endpoints:**
+
+> **GET:** http://localhost:5300/placa/{patente} EXAMPLE: AUH628
+
+> **GET:** http://localhost:5300/papeleta/{patente} EXAMPLE: AUH628
