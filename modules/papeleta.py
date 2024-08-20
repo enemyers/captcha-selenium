@@ -3,18 +3,19 @@ from selenium.webdriver.common.by import By
 
 from pypasser import reCaptchaV2
 
-from pyvirtualdisplay import Display
+#from pyvirtualdisplay import Display
 
 from flask import jsonify
 
 def get_papeleta(placa):
 
     #SILENT BROWSER
-    display = Display(visible=0, size=(800, 600))
-    display.start()
+    #display = Display(visible=0, size=(800, 600))
+    #display.start()
 
     options = webdriver.ChromeOptions()
     options.add_experimental_option("detach", True)
+    options.add_argument('--headless')
 
     driver = webdriver.Chrome(options=options)
 
@@ -34,11 +35,14 @@ def get_papeleta(placa):
 
     result = data.text
 
-    # Close the driver or keep it open if needed
-    #sleep(3)
-    #driver.quit()
+    data = {
+        'result': result
+    }
 
     # Stop silent browser
-    display.stop()
+    #display.stop()
 
-    return jsonify({"data": result})
+    # Close the driver or keep it open if needed
+    driver.quit()
+
+    return jsonify({"data": data})

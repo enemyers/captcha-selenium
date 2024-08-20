@@ -3,7 +3,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions
 from selenium.webdriver.common.by import By
 
-from pyvirtualdisplay import Display
+#from pyvirtualdisplay import Display
 import base64
 import easyocr
 
@@ -12,11 +12,12 @@ from flask import jsonify
 def get_placa(placa):
 
     #SILENT BROWSER
-    display = Display(visible=0, size=(800, 600))
-    display.start()
+    ##display = Display(visible=0, size=(800, 600))
+    ##display.start()
 
     options = webdriver.ChromeOptions()
     options.add_experimental_option("detach", True)
+    options.add_argument('--headless')
 
     driver = webdriver.Chrome(options=options)
 
@@ -53,9 +54,6 @@ def get_placa(placa):
     driver.find_element(By.XPATH, '//*[@id="txtCaptcha"]').send_keys(captchaResult)
     driver.find_element(By.XPATH, '//*[@id="BtnBuscar"]').click()
 
-    # Close the driver or keep it open if needed
-    # driver.quit()
-
     #Extract data
 
     WebDriverWait(driver, 5)\
@@ -80,6 +78,9 @@ def get_placa(placa):
     }
 
     # Stop silent browser
-    display.stop()
+    #display.stop()
+
+    # Close the driver or keep it open if needed
+    driver.quit()
 
     return jsonify({"data": data})

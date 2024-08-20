@@ -55,26 +55,12 @@ https://www.dllme.com/dll/files/libomp140_x86_64/00637fe34a6043031c9ae4c6cf0a891
  - Selenium 4.23.1 
  - Flask    3.0.3
  - easyocr  1.7.1 (https://github.com/JaidedAI/EasyOCR)
- - PyVirtualDisplay 3.0
  - PyPasser 0.0.5 (recaptchav2) (https://pypi.org/project/PyPasser/)
 
 ---
 
 ### To run project:
 > python main.py
-
-
-**NOTE:**
-
-**ON WINDOWS AND MACOS NOT WORK BACKGROUND DISPLAY, SO YOU NEED COMMENT THIS:**
-
-> #from pyvirtualdisplay import Display --> (/modules/papeleta.py) and (/modules/papeleta.py)
-
-> #display = Display(visible=0, size=(800, 600)) --> (/modules/papeleta.py) and (/modules/papeleta.py)
-
-> #display.start() (/modules/papeleta.py) and --> (/modules/papeleta.py)
-
-> #display.stop() (/modules/papeleta.py) and --> (/modules/papeleta.py)
 
 ---
 

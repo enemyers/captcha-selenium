@@ -33,7 +33,6 @@ pydub==0.25.1
 PyPasser==0.0.5
 PySocks==1.7.1
 python-bidi==0.6.0
-PyVirtualDisplay==3.0
 PyYAML==6.0.2
 requests==2.32.3
 scikit-image==0.24.0
