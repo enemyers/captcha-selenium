@@ -64,7 +64,7 @@ https://www.dllme.com/dll/files/libomp140_x86_64/00637fe34a6043031c9ae4c6cf0a891
 
 ---
 
-**Links to test the endpoints:**
+**Links to test endpoints:**
 
 > **GET:** http://localhost:5300/placa/{patente} EXAMPLE: AUH628
 
