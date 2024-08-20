@@ -49,12 +49,13 @@ https://www.dllme.com/dll/files/libomp140_x86_64/00637fe34a6043031c9ae4c6cf0a891
 
 **if error with modules reinstall these packages:**
 
-> pip install -r selenium Flask easyocr PocketSphinx pypasser
+> pip install -r selenium Flask easyocr PocketSphinx PyPasser
 
 ### pip packages:
- - Selenium 4.23.1 
- - Flask    3.0.3
+ - Selenium 4.23.1 (https://pypi.org/project/selenium/)
+ - Flask    3.0.3 (https://pypi.org/project/Flask/)
  - easyocr  1.7.1 (https://github.com/JaidedAI/EasyOCR)
+ - pocketsphinx 5.0.3 (https://pypi.org/project/pocketsphinx/)
  - PyPasser 0.0.5 (recaptchav2) (https://pypi.org/project/PyPasser/)
 
 ---
