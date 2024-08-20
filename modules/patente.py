@@ -2,12 +2,13 @@ from selenium import webdriver
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions
 from selenium.webdriver.common.by import By
-
+from flask import jsonify
 #from pyvirtualdisplay import Display
+
 import base64
 import easyocr
 
-from flask import jsonify
+from modules.urls import URL_PLACA
 
 def get_placa(placa):
 
@@ -21,7 +22,7 @@ def get_placa(placa):
 
     driver = webdriver.Chrome(options=options)
 
-    driver.get("https://portal.mtc.gob.pe/reportedgtt/form/frmconsultaplacaitv.aspx")
+    driver.get(URL_PLACA)
 
     captchaImage = driver.find_element(By.XPATH, '//*[@id="imgCaptcha"]')
 

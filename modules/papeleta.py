@@ -1,11 +1,10 @@
 from selenium import webdriver
 from selenium.webdriver.common.by import By
-
 from pypasser import reCaptchaV2
-
 #from pyvirtualdisplay import Display
 
 from flask import jsonify
+from modules.urls import URL_PAPELETA
 
 def get_papeleta(placa):
 
@@ -19,7 +18,7 @@ def get_papeleta(placa):
 
     driver = webdriver.Chrome(options=options)
 
-    driver.get("https://www.sat.gob.pe/VirtualSAT/modulos/papeletas.aspx?mysession=xUQo%2bVlFtAGfa0%2fNIUx%2bmrUXt6JElgEMs%2bO6MxyVbEc%3d")
+    driver.get(URL_PAPELETA)
 
     driver.find_element(By.XPATH, '//*[@id="tipoBusquedaPapeletas"]/option[2]').click()
 
