@@ -18,7 +18,7 @@ def get_papeleta(placa):
 
     driver = webdriver.Chrome(options=options)
 
-    driver.get("https://www.sat.gob.pe/VirtualSAT/modulos/papeletas.aspx?mysession=WqTAxLSQsSgZihSCN8ru2bNbrZf9vUnpoAexlXv9aZE%3d")
+    driver.get("https://www.sat.gob.pe/VirtualSAT/modulos/papeletas.aspx?mysession=xUQo%2bVlFtAGfa0%2fNIUx%2bmrUXt6JElgEMs%2bO6MxyVbEc%3d")
 
     driver.find_element(By.XPATH, '//*[@id="tipoBusquedaPapeletas"]/option[2]').click()
 
